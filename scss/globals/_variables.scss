@@ -1,0 +1,20 @@
+// Font Families
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Merriweather&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:wght@400;600&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+// Headings, Call-to-actions, Header Navigation (400, 700)
+$primary-family: 'Raleway', sans-serif;
+
+// Body (400)
+$secondary-family: 'Open Sans', sans-serif;
+
+
+// Colors 
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+// Font Size 
+$font-size: 1rem;

@@ -1,0 +1,158 @@
+@use 'function' as f;
+
+.header {
+    padding: f.rem(30);
+    text-align: center;
+
+    @include breakpoint('medium') {
+        padding: f.rem(40);
+    }
+
+    @include breakpoint('large') {
+        padding: f.rem(55);
+        text-align: left;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: f.rem(25); 
+        text-align: center;
+
+        @include breakpoint('large') {
+            gap: f.rem(50);
+        }
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    & a {
+        text-decoration: none;
+        font-size: f.rem(14);
+        font-family: $primary-family;
+        font-weight: 500;
+        color: $very-dark-blue;
+
+        @include breakpoint('medium') {
+            font-size: $font-size;
+        }
+    }
+
+    &__img1 {
+        width: f.rem(100);
+        padding-right: f.rem(10);
+
+        @include breakpoint('large') {
+            width: f.rem(160);
+        }
+    }
+
+    &__container {
+
+        @include breakpoint('large') {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__img2 {
+        max-width: 100%;
+        width: f.rem(600);
+        margin-top: f.rem(110);
+        margin-left: auto;
+        margin-right: auto;
+
+        @include breakpoint('large') {
+            margin-right: f.rem(30);
+        }
+    }
+    
+    & h1 {
+        margin-top: f.rem(25);
+        font-size: f.rem(24);
+        font-family: $secondary-family;
+
+        @include breakpoint('medium') {
+            font-size: f.rem(28);
+        }
+
+        @include breakpoint('large') {
+            margin-top: f.rem(160);
+            font-size: f.rem(35);
+        }
+    }
+
+    & p {
+        margin-top: f.rem(20);
+        font-weight: 500;
+
+        @include breakpoint('large') {
+            margin-top: f.rem(10);
+        }
+    }
+
+    &__information {
+
+        @include breakpoint('large') {
+            max-width: 42%;
+        }
+    }
+
+    & input {
+        display: block;
+        margin: 0 auto;
+        margin-top: f.rem(30);
+        max-width: 100%;
+        width: f.rem(320);
+        padding: f.rem(12) f.rem(20);
+        border: f.rem(2) solid #a1a1a1;
+        border-radius: f.rem(5);
+        
+        &::placeholder {
+            color: $light-gray;
+        }
+
+        @include breakpoint('large') {
+            display: inline;
+            width: f.rem(290);
+            margin-right: f.rem(5);
+            margin-top: f.rem(20);
+        }
+    }
+
+    &__btn {
+        max-width: 100%;
+        width: f.rem(320);
+        padding: f.rem(11) f.rem(20);
+        margin-top: f.rem(15);
+        font-family: $primary-family;
+        font-weight: 600;
+        font-size: f.rem(16);
+        background-color: $bright-blue;
+        color: $light-grayish-blue;
+        border: none;
+        border-radius: f.rem(5);
+        box-shadow: 0 f.rem(10) f.rem(10) rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background-color: rgb(98, 135, 236);
+        }
+
+        @include breakpoint('large') {
+            width: f.rem(194);
+            padding: f.rem(12) f.rem(20);
+        }
+    }
+}
